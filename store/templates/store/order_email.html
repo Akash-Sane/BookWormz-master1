@@ -1,0 +1,13 @@
+{% extends 'store/main.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1>Payment Successful</h1>
+            <p>Thank you for your purchase! Your order details have been sent to your email address.</p>
+            <a href="{% url 'order_details' %}" class="btn btn-secondary mb-2">View Order</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
