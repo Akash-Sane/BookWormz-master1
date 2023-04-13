@@ -12,9 +12,9 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'b_jk^-3-9x5@!xfc#ocq8^=9^2ie2-100uxr2hujt))a=&ni9u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["bookwormz.eu-west-3.elasticbeanstalk.com","*","172.31.33.185"]
+ALLOWED_HOSTS = ["*"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # Application definition
@@ -124,7 +124,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [STATIC_DIR,]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 STATIC_ROOT = os.path.join(BASE_DIR ,'staticfiles')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
