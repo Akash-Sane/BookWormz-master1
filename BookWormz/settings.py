@@ -14,7 +14,7 @@ SECRET_KEY = 'b_jk^-3-9x5@!xfc#ocq8^=9^2ie2-100uxr2hujt))a=&ni9u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["bookwormz.eu-west-3.elasticbeanstalk.com","*"]
+ALLOWED_HOSTS = ["bookwormz.eu-west-3.elasticbeanstalk.com","*","172.31.33.185"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # Application definition
