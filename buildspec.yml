@@ -12,7 +12,7 @@ phases:
       - echo Running tests...
      # - python manage.py test
       - echo Collecting static files...
-      - python manage.py collectstatic --noinput
+      #- python manage.py collectstatic --noinput
 artifacts:
   files:
     - '**/*'
